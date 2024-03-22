@@ -3,7 +3,6 @@ import os
 import sys
 sys.path.append("/home/orangepi/.local/lib/python3.8/site-packages")
 from lcd import  Lcd
-from uart import Uart
 from emoji import read_img_dict,do_emoji
 
 class Logger(object):
@@ -52,7 +51,6 @@ def interrupt_callback():
 
 
 lcd = Lcd()
-uart = Uart()
 imgs_dict = read_img_dict()
 
 def detectedCallback1():
