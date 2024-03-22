@@ -79,10 +79,10 @@ if __name__ == "__main__":
 
     models = [
     "snowboy/resources/models/snowboy.umdl",
-    "snowboy/resources/xiang_you_zhuan.pmdl",
+    "snowboy/resources/xiaobai.pmdl",
     "snowboy/resources/wei_xiao.pmdl",
     "snowboy/resources/zha_yan.pmdl"]
-    detector = snowboydecoder.HotwordDetector(models, sensitivity=0.5)
+    detector = snowboydecoder.HotwordDetector(models, sensitivity=0.59)
 
     detectedCallbacks = [
         detectedCallback1,

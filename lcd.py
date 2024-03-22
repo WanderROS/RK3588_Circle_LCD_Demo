@@ -200,7 +200,7 @@ class Lcd:
 
         self.Lcd_WriteIndex(0x36)
 
-        USE_HORIZONTAL = 2
+        USE_HORIZONTAL = 1 
         if(USE_HORIZONTAL==0): self.Lcd_WriteData(0x08)
         elif(USE_HORIZONTAL==1): self.Lcd_WriteData(0xC8)
         elif(USE_HORIZONTAL==2): self.Lcd_WriteData(0x68)
